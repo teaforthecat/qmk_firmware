@@ -30,14 +30,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,----------------------------------.           ,------------------------------.
    * |   !  |   @  |   {  |   }  |   |  |           |  &  |   <  |  >  |  +  |  *  |
    * |------+------+------+------+------|           |-----+------+-----+-----+-----|
-   * |   #  |   $  |   (  |   )  |   `  |           |  '  |   "  |  ?  |  :  |  =  |
+   * |   #  |   $  |   (  |   )  |   `  |           |  ?  |   "  |  '  |  :  |  =  |
    * |------+------+------+------+------|           |-----+------+-----+-----+-----|
    * |   %  |   ^  |   [  |   ]  |   ~  |           |     |   -  |  _  |  /  |  \  |
    * `----------------------------------'           `------------------------------'
    */
   [1] = LAYOUT( \
                KC_EXLM, KC_AT,  KC_LCBR, KC_RCBR, KC_PIPE,      KC_AMPR, KC_LT,   KC_GT,   KC_PLUS, KC_ASTR, \
-               KC_HASH, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,     KC_QUOT, KC_DQT,  KC_QUES, S(KC_P), KC_EQL, \
+               KC_HASH, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,     KC_QUES, KC_DQT,  KC_QUOT, S(KC_P), KC_EQL, \
                KC_PERC, KC_CIRC,KC_LBRC, KC_RBRC, KC_TILDE,     _______, KC_MINUS, KC_UNDS, KC_SLSH, KC_BSLS, \
                _______, KC_DEL, _______,     _______, _______, _______ \
                 ),
