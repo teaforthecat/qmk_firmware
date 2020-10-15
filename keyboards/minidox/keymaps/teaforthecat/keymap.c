@@ -7,6 +7,7 @@
 
 enum custom_layers {
                     _BASE,
+                    _CAPS,
                     _SYM,
                     _NAV,
                     _MACROS,
@@ -37,17 +38,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    *                                 `------'    `--------'
    */
   [_BASE] = LAYOUT( \
-               KC_Q, KC_W, KC_E,        KC_R,        KC_T,     KC_Y, KC_U,        KC_I,    KC_O,   GUI_T(KC_P), \
+               KC_Q, KC_W, KC_E,        KC_R,        KC_T,     KC_Y, KC_U,        KC_I,    KC_O,   TG(_CAPS), \
                KC_A, KC_S, LT(_NUMPAD, KC_D), SFT_T(KC_F), KC_G,     KC_H, SFT_T(KC_J), KC_K,    KC_L,   KC_SCLN, \
                KC_Z, KC_X, KC_C,        KC_V,        KC_B,     KC_N, KC_M,        KC_COMM, KC_DOT, OSL(_SYM), \
                LM(_MACROS,MOD_LGUI), KC_ESC, CTL_T(KC_BSPC),  ALT_T(KC_SPC), KC_ENTER, MO(_NAV) \
                 ),
 
+  /* qwfpg jluy; */
+  /* arstd hneio */
+  /* zxcvb km,. */
 
 
-
-
-
+  [_CAPS] = LAYOUT( \
+                   S(KC_Q), S(KC_W), S(KC_E), S(KC_R),  S(KC_T), /**/ S(KC_Y), S(KC_U), S(KC_I),  S(KC_O), TG(_CAPS), \
+                   S(KC_A), S(KC_S), S(KC_D), S(KC_F),  S(KC_G), /**/ S(KC_H), S(KC_J), S(KC_K),  S(KC_L), S(KC_SCLN), \
+                   S(KC_Z), S(KC_X), S(KC_C), S(KC_V),  S(KC_B), /**/ S(KC_N), S(KC_M), KC_MINUS, KC_UNDS, OSL(_SYM), \
+                   /*                       */ ____, ____, ____, /**/ ____, ____, ____                           \
+                    ),
 
 
 
