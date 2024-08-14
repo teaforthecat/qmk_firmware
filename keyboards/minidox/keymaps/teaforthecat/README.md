@@ -35,3 +35,19 @@ really enjoying the feeling of shift on the home row.
 One more caveat: the colon key on the symbol layer is adjusted for a Colemak
 layout set on the OS. It is not necessary there because the ; is still on
 layer 0. It is mostly there for completeness of the symbol layer.     
+
+
+# Setup
+
+``` shell
+brew install avrdude
+xcode-select --install
+brew tap osx-cross/avr
+brew install avr-gcc
+```
+
+# Build and load
+
+``` shell
+make minidox/rev1:teaforthecat:avrdude
+```
